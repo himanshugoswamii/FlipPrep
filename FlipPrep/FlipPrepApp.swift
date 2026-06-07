@@ -1,21 +1,17 @@
-//
-//  FlipPrepApp.swift
-//  FlipPrep
-//
-//  Created by Himanshu Goswami on 6/6/26.
-//
-
 import SwiftUI
-import CoreData
 
 @main
 struct FlipPrepApp: App {
-    let persistenceController = PersistenceController.shared
+    let persistence = PersistenceController.shared
+
+    init() {
+        SeedData.seedIfNeeded(context: persistence.context)
+    }
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, persistence.context)
         }
     }
 }

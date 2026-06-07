@@ -6,17 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BE13BDF22FD4CC240027B23E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13BDEF2FD4CC240027B23E /* Persistence.swift */; };
+		BE13BDF32FD4CC240027B23E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13BDEC2FD4CC240027B23E /* ContentView.swift */; };
+		BE13BDF42FD4CC240027B23E /* FlipPrep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE13BDED2FD4CC240027B23E /* FlipPrep.xcdatamodeld */; };
+		BE13BDF52FD4CC240027B23E /* FlipPrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13BDEE2FD4CC240027B23E /* FlipPrepApp.swift */; };
+		BE13BDF62FD4CC240027B23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE13BDEB2FD4CC240027B23E /* Assets.xcassets */; };
+		BE13BDFC2FD4E3600027B23E /* SeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13BDFB2FD4E3580027B23E /* SeedData.swift */; };
+		BE13BDFE2FD4E5EA0027B23E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13BDFD2FD4E5DF0027B23E /* HomeView.swift */; };
+		BE13BE002FD4E6E20027B23E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13BDFF2FD4E6D90027B23E /* CardView.swift */; };
+		BE13BE022FD4E7800027B23E /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13BE012FD4E77B0027B23E /* SessionView.swift */; };
+		BE13BE042FD4E9900027B23E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13BE032FD4E98A0027B23E /* ProgressView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BE13BDD42FD4C8B20027B23E /* FlipPrep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipPrep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE13BDEB2FD4CC240027B23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE13BDEC2FD4CC240027B23E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE13BDEE2FD4CC240027B23E /* FlipPrepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipPrepApp.swift; sourceTree = "<group>"; };
+		BE13BDEF2FD4CC240027B23E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BE13BDF12FD4CC240027B23E /* FlipPrep.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlipPrep.xcdatamodel; sourceTree = "<group>"; };
+		BE13BDFB2FD4E3580027B23E /* SeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedData.swift; sourceTree = "<group>"; };
+		BE13BDFD2FD4E5DF0027B23E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BE13BDFF2FD4E6D90027B23E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BE13BE012FD4E77B0027B23E /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		BE13BE032FD4E98A0027B23E /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		BE13BDD62FD4C8B20027B23E /* FlipPrep */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FlipPrep;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BE13BDD12FD4C8B20027B23E /* Frameworks */ = {
@@ -32,7 +47,7 @@
 		BE13BDCB2FD4C8B20027B23E = {
 			isa = PBXGroup;
 			children = (
-				BE13BDD62FD4C8B20027B23E /* FlipPrep */,
+				BE13BDF02FD4CC240027B23E /* FlipPrep */,
 				BE13BDD52FD4C8B20027B23E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +58,55 @@
 				BE13BDD42FD4C8B20027B23E /* FlipPrep.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BE13BDF02FD4CC240027B23E /* FlipPrep */ = {
+			isa = PBXGroup;
+			children = (
+				BE13BDFA2FD4CC9D0027B23E /* Data */,
+				BE13BDF92FD4CC980027B23E /* Views */,
+				BE13BDF82FD4CC850027B23E /* ViewModels */,
+				BE13BDF72FD4CC700027B23E /* Models */,
+				BE13BDEB2FD4CC240027B23E /* Assets.xcassets */,
+				BE13BDEC2FD4CC240027B23E /* ContentView.swift */,
+				BE13BDED2FD4CC240027B23E /* FlipPrep.xcdatamodeld */,
+				BE13BDEE2FD4CC240027B23E /* FlipPrepApp.swift */,
+				BE13BDEF2FD4CC240027B23E /* Persistence.swift */,
+			);
+			path = FlipPrep;
+			sourceTree = "<group>";
+		};
+		BE13BDF72FD4CC700027B23E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE13BDF82FD4CC850027B23E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BE13BDF92FD4CC980027B23E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE13BE032FD4E98A0027B23E /* ProgressView.swift */,
+				BE13BE012FD4E77B0027B23E /* SessionView.swift */,
+				BE13BDFF2FD4E6D90027B23E /* CardView.swift */,
+				BE13BDFD2FD4E5DF0027B23E /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE13BDFA2FD4CC9D0027B23E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BE13BDFB2FD4E3580027B23E /* SeedData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +123,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				BE13BDD62FD4C8B20027B23E /* FlipPrep */,
 			);
 			name = FlipPrep;
 			packageProductDependencies = (
@@ -109,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE13BDF62FD4CC240027B23E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +181,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE13BE002FD4E6E20027B23E /* CardView.swift in Sources */,
+				BE13BDF22FD4CC240027B23E /* Persistence.swift in Sources */,
+				BE13BDF32FD4CC240027B23E /* ContentView.swift in Sources */,
+				BE13BE022FD4E7800027B23E /* SessionView.swift in Sources */,
+				BE13BDFC2FD4E3600027B23E /* SeedData.swift in Sources */,
+				BE13BDFE2FD4E5EA0027B23E /* HomeView.swift in Sources */,
+				BE13BDF42FD4CC240027B23E /* FlipPrep.xcdatamodeld in Sources */,
+				BE13BDF52FD4CC240027B23E /* FlipPrepApp.swift in Sources */,
+				BE13BE042FD4E9900027B23E /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +399,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE13BDED2FD4CC240027B23E /* FlipPrep.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE13BDF12FD4CC240027B23E /* FlipPrep.xcdatamodel */,
+			);
+			currentVersion = BE13BDF12FD4CC240027B23E /* FlipPrep.xcdatamodel */;
+			path = FlipPrep.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BE13BDCC2FD4C8B20027B23E /* Project object */;
 }
